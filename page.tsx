@@ -6,21 +6,15 @@ import Image from "next/image";
 export default function Dashboard() {
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col">
-      {/* Header */}
       <header className="flex justify-between items-center bg-white shadow p-4">
         <h1 className="flex items-center text-xl text-gray-900 font-bold">
           SMK TELKOM MAKASSAR
         </h1>
         <div className="font-medium text-gray-900">OKTAVIANTO</div>
       </header>
-
-      {/* Content */}
       <main className="flex flex-1 p-4 gap-4">
-        {/* Kolom Kiri */}
         <div className="flex-1 space-y-4">
-          {/* Jurnal Mengajar */}
           <div className="bg-white p-4 rounded-xl shadow">
-            {/* Header Jurnal */}
             <div className="flex items-center justify-between border-b pb-3 mb-3">
               <h2 className="text-lg font-semibold text-gray-900">
                 Jurnal Mengajar
@@ -39,8 +33,6 @@ export default function Dashboard() {
                 />
               </div>
             </div>
-
-            {/* Status Kehadiran & Jurnal */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <div className="bg-gray-50 p-4 rounded-lg text-center shadow-sm">
                 <p className="text-2xl font-bold text-gray-900">0</p>
@@ -60,8 +52,6 @@ export default function Dashboard() {
               </div>
             </div>
           </div>
-
-          {/* Aplikasi */}
           <div className="bg-white p-4 rounded-xl shadow">
             <h2 className="text-lg text-gray-900 font-semibold mb-3">
               Aplikasi
@@ -83,7 +73,6 @@ export default function Dashboard() {
               ))}
             </div>
           </div>
-          {/* To Do List */}
           <div className="bg-white p-4 rounded-xl shadow">
             <h2 className="text-lg text-gray-900 font-semibold mb-3">
               To Do List
@@ -95,8 +84,6 @@ export default function Dashboard() {
             </ul>
           </div>
         </div>
-
-        {/* Kolom Tengah */}
         <div className="w-80 space-y-4">
           <div className="bg-white p-4 rounded-xl shadow flex flex-col items-center text-center">
             <h2 className="text-lg text-gray-900 font-semibold mb-2">
@@ -109,17 +96,15 @@ export default function Dashboard() {
             />
             <p className="text-gray-600 text-sm">Belum ada guru terbaik</p>
           </div>
-
-          {/* News */}
           <div className="bg-white p-4 rounded-xl shadow">
             <h2 className="text-lg text-gray-900 font-semibold mb-2">News</h2>
             <Image
-                src="/Assets/bakekok.png"
-                alt="News Image"
-                width={500}
-                height={500}
-                className="w-full h-32 object-cover rounded-lg mb-2"
-              />
+              src="/Assets/bakekok.png"
+              alt="News Image"
+              width={500}
+              height={500}
+              className="w-full h-32 object-cover rounded-lg mb-2"
+            />
             <div className="bg-blue-100 p-4 rounded-lg">
               <h3 className="text-gray-900 font-bold">Aplikasi Cuti 3.0</h3>
               <p className="text-sm text-gray-600">
@@ -130,10 +115,7 @@ export default function Dashboard() {
             </div>
           </div>
         </div>
-
-        {/* Kolom Kanan */}
         <aside className="w-80 space-y-4">
-          {/* Sapa Guru (Chat) */}
           <div className="bg-white p-4 rounded-xl shadow flex flex-col h-[550px]">
             <h2 className="text-lg text-gray-900 font-semibold mb-3">
               Sapa Guru
@@ -151,13 +133,13 @@ export default function Dashboard() {
                 </p>
                 <p className="text-gray-600">Keren sekali ini aplikasinya :)</p>
               </div>
-               <div className="bg-gray-100 p-2 rounded">
+              <div className="bg-gray-100 p-2 rounded">
                 <p className="font-semibold text-gray-900">
                   Ananda Dzikmah Amalia
                 </p>
                 <p className="text-gray-600">Keren sekali ini aplikasinya :)</p>
               </div>
-               <div className="bg-gray-100 p-2 rounded">
+              <div className="bg-gray-100 p-2 rounded">
                 <p className="font-semibold text-gray-900">
                   Ananda Dzikmah Amalia
                 </p>
@@ -171,7 +153,6 @@ export default function Dashboard() {
                 </p>
               </div>
             </div>
-            {/* Input Chat */}
             <div className="mt-3 text-gray-600">
               <input
                 type="text"
